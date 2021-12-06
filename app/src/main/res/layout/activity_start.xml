@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B151E"
+    tools:context=".start.ui.StartActivity">
+
+    <ImageView
+        android:id="@+id/spaceship_logo"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="180dp"
+        android:src="@drawable/spaceship_logo_start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/start_game_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/button_start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spaceship_logo" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/start_stars"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/stars_1" />
+
+        <ImageView
+            android:id="@+id/sun"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/sun" />
+
+        <ImageView
+            android:id="@+id/moon"
+            android:layout_width="800dp"
+            android:layout_height="800dp"
+            android:src="@drawable/moon"
+            android:translationX="-200dp"
+            android:translationY="450dp" />
+
+
+        <ImageView
+            android:id="@+id/shadow"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:translationX="100dp"
+            android:translationY="450dp"
+            android:src="@drawable/shadow" />
+
+        <ImageView
+            android:id="@+id/spaceship_start"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:translationX="100dp"
+            android:translationY="400dp"
+            android:src="@drawable/starship_start_of" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
